@@ -207,6 +207,7 @@ header {
   transition: .3s;
   border: 2px solid #3B3F44;
   border-top: none;
+  cursor: pointer;
 }
 .get:hover {
   background-color: #3B3F44;
