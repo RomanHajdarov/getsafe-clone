@@ -240,6 +240,7 @@ header {
   transition: .3s;
 }
 #email:focus {
+  outline: none;
   border: 2px solid #74D1BA;
   transition: .3s;
 }
