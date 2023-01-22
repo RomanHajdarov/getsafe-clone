@@ -10,9 +10,12 @@
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/normalize.css">
   <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script src="drag-and-drop.js">
+    
+  </script>
 </head>
 
-<body>
+<body onload="enableDragAndDrop()">
 
   <header>
     <div id="header">
@@ -58,7 +61,25 @@
     <!-- About -->
     <section id="about">
       <h2 class="heading">ABOUT</h2>
-      <p class="about-text"> The <a href="https://www.hellogetsafe.com/en-de" class="highlight" target="_blank">Getsafe</a> insurances protects against financial damage and supports with aid if it is needed. Only when the damage has already occurred you realize how important insurance can be... <a href="https://www.youtube.com/watch?v=MYGNYOdcDCY" class="highlight" target="_blank"> <p>Be Safe, Getsafe!</p></a></p>
+      <p class="about-text"> The <a href="https://www.hellogetsafe.com/en-de" class="highlight" target="_blank">Getsafe</a> insurances protects against financial damage and supports with aid if it is needed. Only when the damage has already occurred you realize how important insurance can be... <a href="https://www.youtube.com/watch?v=MYGNYOdcDCY" class="highlight" target="_blank"> <p>Be safe, Getsafe!</p></a></p>
+
+
+      <!-- Drag & Drop -->
+
+      <div class="behaelter" id="behaelters">
+        <div class="slot">
+          <img src="images/bild1.png" alt id="beispielbild1" class="draggable"/>  <!-- in html eingefügt -->
+        </div>
+        <div class="slot">
+          <img src="images/bild2.png" alt id="beispielbild2" class="draggable"/>
+        </div>
+        <div class="slot">
+        <img src="images/bild3.png" alt id="beispielbild3" class="draggable"/>
+        </div>
+      </div>
+
+
+
 
       <!-- Icons -->
       <div class="icons">

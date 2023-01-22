@@ -19,8 +19,9 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
-}
 
+}
+/*  
 #header {
   display: flex;
   flex-direction: row;
@@ -28,20 +29,38 @@ header {
   background-color: #ffffff;
   padding: 50px 2%;
   align-items: center;
+}*/
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 2vh 2%;
+  align-items: center;
 }
+
+@media (max-width: 600px) {
+  #header {
+      padding: 1vh 1%;
+  }
+}
+
 
 #header-img {
   width: 100%;
   max-width: 300px;
 }
 
-/* Navigation Bar */
 #nav-bar ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   list-style-type: none;
   align-items: stretch;
+  width: 100%;
 }
+
+
 
 .nav-link {
   margin-right: 45px;
@@ -50,9 +69,8 @@ header {
   text-decoration-line: none;
   transition: .3s;
   font-size: 17px;
-
-
 }
+
 
 .btn-slim {
   display: flex;
@@ -410,4 +428,55 @@ footer {
   #email {
     width: 50%;
   }
+}
+
+/*  .behaelter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 240px;
+  padding-top: 70px;
+
+}
+
+.slot {
+  display: flex;
+  width: 270px;
+  flex-wrap: wrap;
+  aspect-ratio: 1/1;
+  border: 2px outset #9fc9aa ;
+  cursor: grab;
+
+} */
+
+.behaelter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2vh 10%;
+  padding-top: 4vh;
+}
+
+.slot {
+  display: flex;
+  width: 30%;
+  flex-wrap: wrap;
+  border: 5px outset #9fc9aa;
+  cursor: grab;
+}
+
+@media (max-width: 600px) {
+  .slot {
+    width: 100%;
+  }
+}
+
+.slot img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.drag-over {
+  border: 5px solid rgb(23, 237, 205);
 }
