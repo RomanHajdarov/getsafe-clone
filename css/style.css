@@ -12,32 +12,23 @@ body {
 
 /* DESKTOP LAYOUT */
 
-/* Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-
 }
-/*  
-#header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #ffffff;
-  padding: 50px 2%;
-  align-items: center;
-}*/
+
 
 #header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 2vh 2%;
+  padding: 3% .5%;
   align-items: center;
+
 }
 
 @media (max-width: 600px) {
@@ -49,26 +40,31 @@ header {
 
 #header-img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 #nav-bar ul {
   display: flex;
-  flex-flow: wrap;
   list-style-type: none;
-  align-items: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start -10%;
   width: 100%;
+  height: fit-content;
 }
 
 
 
 .nav-link {
-  margin-right: 45px;
-  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+  padding: 1vh 1em;
   color: rgb(8, 1, 1);
   text-decoration-line: none;
   transition: .3s;
   font-size: 17px;
+  width: auto;
+  height: fit-content;
 }
 
 
@@ -77,33 +73,35 @@ header {
   flex-direction: column;
   justify-content: center;
   border-radius: 8px;
-  line-height: 20px;
-  margin-bottom: -10px;
-  margin-right: 30px;
-  min-height: 0px;
-  min-width: 140px;
-  padding: 4px 12px;
+  margin-bottom: -1%;
+  margin-right: 1%;
+  min-width: 2em;
+  padding: .5vh 1em;
   background-color: #043c2c;
   color: #ffffff;
 }
 
 .nav-link:hover {
-  padding: 7px 5px;
-  border-top: 2px solid #FFF;
-  border-bottom: 2px solid #FFF;
-  transition: .3s;
+  padding: em 0.1vh;
+  border-top: .2em solid #FFF;
+  border-bottom: 0.2em solid #FFF;
+  transition: .4s;
+  
 }
+
 
 /* Main Content */
 .container {
-  margin: 180px auto 0 auto;
+  margin: 200px auto 0 auto;
   max-width: auto;
   background-color: #043c2c;
+  padding-top: -10em;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
+
 }
 
 .main-title {
@@ -111,22 +109,25 @@ header {
   font-family: 'Raleway', sans-serif;
   font-size: 4em;
   letter-spacing: 1px;
+  margin-top: 7%;
 }
 
 .join-btn {
-  margin: 10px auto;
-  padding: 15px 20px;
-  border-radius: 15px;
-  width: 185px;
+  margin: 2em auto;
+  padding: 2em 1vh;
+  border-radius: 20em;
+  width: 15em;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 1000;
   letter-spacing: 3px;
   color: #013d2b;
   background-color: #ade6b9;
   border: 2px solid #013d2b;
   transition: .3s;
+  margin-top: 3em;
+  margin-bottom: 4.5em;
 }
 
 .join-btn:hover {
@@ -137,7 +138,7 @@ header {
 /* About */
 #about {
   text-align: center;
-  padding-top: 65px;
+  padding-top: 2px;
 }
 
 .heading {
@@ -152,9 +153,31 @@ header {
 
 .about-text {
   max-width: 1024px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.7em;
   margin: 0 auto;
+
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  margin-bottom: 1em;
+  font-size: 3em;
+  color: #bae2c3;
+  text-decoration-line: overline;
+
+}
+
+.play {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top:auto;
+  font-size: 2em;
+  margin-bottom: -1.1em;
+  text-decoration: overline;
+  
 }
 
 .highlight {
@@ -174,28 +197,16 @@ header {
   transition: .3s;
 }
 
-/* Icons */
-.icons {
+/* Vision */
+
+.vision {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.icon-div {
-  margin: 50px 30px;
-  width: 280px;
-}
-
-.icon-heading {
-  margin-bottom: 5px;
-  font-weight: 600;
-  font-size: 1.5em;
-  color: #ade6b9;
-  letter-spacing: 1px;
-}
-
-.icon-text {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: inherit;
   font-size: 1em;
+
+  
 }
 
 /* Video */
@@ -210,7 +221,7 @@ header {
 
 /* Pricing */
 #pricing {
-  padding-top: 65px;
+  padding-top: 1em;
 }
 
 .pricing-div {
@@ -383,6 +394,7 @@ footer {
   /* Video */
   #video {
     margin-top: 30px;
+
   }
 
   /* Pricing */
@@ -478,5 +490,6 @@ footer {
 }
 
 .drag-over {
-  border: 5px solid rgb(23, 237, 205);
+  border: 0.5em solid rgb(255, 247, 0);
 }
+
