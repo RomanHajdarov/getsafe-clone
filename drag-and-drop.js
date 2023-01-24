@@ -32,14 +32,13 @@ function enableDragAndDrop() {
   }
   
   function dragEnter(e) {                               
-  function dragEnter(e) {                               /* dragEnter(e) wird aufgerufen, wenn ein Benutzer ein Bild in den Bereich eines Slots bewegt. */
-    e.preventDefault();                                  /* verhindert das Standardverhalten des Browsers */
-    this.classList.add('drag-over');                   
-  }
+    e.preventDefault();
+    this.classList.add('drag-over');
+  }                                                     /* dragEnter(e) wird aufgerufen, wenn ein Benutzer ein Bild in den Bereich eines Slots bewegt */
   
-  function dragLeave() {                                 /* dragLeave() wird aufgerufen, wenn ein Benutzer ein Bild außerhalb des Bereichs eines Slots bewegt */
+  function dragLeave() {
     this.classList.remove('drag-over');
-  }
+  }                                                      /* dragLeave() wird aufgerufen, wenn ein Benutzer ein Bild außerhalb des Bereichs eines Slots bewegt. */
   
  
 
@@ -49,5 +48,6 @@ function enableDragAndDrop() {
     let currentSlot = currentDraggable.parentNode;
     let targetSlot = this;
     currentSlot.appendChild(targetSlot.firstElementChild);
-    targetSlot.appendChild(currentDraggable);               /* dragDrop() wird aufgerufen, wenn ein Benutzer das Bild loslässt, während es sich über einem Slot befindet. Es entfernt die Klasse "drag-over"  */
+    targetSlot.appendChild(currentDraggable);
 }
+                                                        /* dragDrop() wird aufgerufen, wenn ein Benutzer das Bild loslässt, während es sich über einem Slot befindet. */

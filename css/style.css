@@ -109,7 +109,7 @@ header {
 .title {
   width: 50%;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-bottom: 5%;
 
 }
@@ -140,7 +140,7 @@ header {
   transition: .3s;
   color: #013d2b;
   background-color: #ade6b9;
-  margin-right: 7.0em;
+  margin-right: 8.0em;
 }
 
 .phone {
