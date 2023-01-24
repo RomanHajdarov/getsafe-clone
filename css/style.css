@@ -24,9 +24,9 @@ header {
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #ffffff;
-  padding: 3% .5%;
+  padding: 4em;
   align-items: center;
 
 }
